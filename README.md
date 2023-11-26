@@ -1,5 +1,5 @@
 # openTes
-> view Live [here](opentes.netlify.app)
+> view Live [here](https://opentes.netlify.app)
 
 
 Just a simple place to showcase my projects :>
