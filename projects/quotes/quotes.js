@@ -5,13 +5,13 @@ var currentQuote, quoteContent;
 
 if(JSON.parse(localStorage.getItem('savedQuotes')) != null){
     buttonDiv.innerHTML = ` 
-        <button class="btn btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>  
-        <button class="btn btn-info" onclick="retrieveQuote()">View Saved Quotes</button>
+        <button class="btn  d-block d-md-inline m-auto my-3 btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>  
+        <button class="btn  d-block d-md-inline m-auto my-3  btn-info" onclick="retrieveQuote()">View Saved Quotes</button>
     `
 }
 else{
     buttonDiv.innerHTML = ` 
-        <button class="btn btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>
+        <button class="btn  d-block d-md-inline m-auto my-3 btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>
     `;
 }
 
@@ -39,9 +39,9 @@ function getQuote(){
             `
             console.log(data[0].author);
                 buttonDiv.innerHTML = `
-                    <button class="btn btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>                      
-                    <button class="btn btn-info" onclick="retrieveQuote()">View Saved Quotes</button>
-                    <button class="btn btn-warning" onclick="saveQuote()">Save This Quote</button>
+                    <button class="btn  d-block d-md-inline m-auto my-3 btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>                      
+                    <button class="btn  d-block d-md-inline m-auto my-3  btn-info" onclick="retrieveQuote()">View Saved Quotes</button>
+                    <button class="btn  d-block d-md-inline m-auto my-3 btn-warning" onclick="saveQuote()">Save This Quote</button>
                 `
                 quote.innerHTML = quoteContent;
             
@@ -74,15 +74,15 @@ function saveQuote(){
         alert(`Quote Sucessfully Saved to the device. Click on View Saved Quotes to see Saved Quotes`);
     }
     buttonDiv.innerHTML = `
-                    <button class="btn btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>                      
-                    <button class="btn btn-info" onclick="retrieveQuote()">View Saved Quotes</button>
+                    <button class="btn  d-block d-md-inline m-auto my-3 btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>                      
+                    <button class="btn  d-block d-md-inline m-auto my-3  btn-info" onclick="retrieveQuote()">View Saved Quotes</button>
                 `
 }
 
 function retrieveQuote(){
     buttonDiv.innerHTML = `
-        <button class="btn btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>
-        <button class="btn btn-danger" id="deleteQuote" onclick="deleteQuote()">Delete All</button>
+        <button class="btn  d-block d-md-inline m-auto my-3 btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>
+        <button class="btn  d-block d-md-inline m-auto my-3 btn-danger" id="deleteQuote" onclick="deleteQuote()">Delete All</button>
     `
     console.log(JSON.parse(localStorage.getItem('savedQuotes')));
     var retrievedQuotes = JSON.parse(localStorage.getItem('savedQuotes'));
@@ -130,6 +130,6 @@ function deleteQuote(){
         <p class="text-danger bg-light">All Quotes Deleted Successfully</p>
     `
     buttonDiv.innerHTML = `
-        <button class="btn btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>
+        <button class="btn  d-block d-md-inline m-auto my-3 btn-success" id="getQuote" onclick="getQuote()">Get Quote</button>
     `
 }
