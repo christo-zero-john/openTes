@@ -1,0 +1,38 @@
+hr{
+    border-color: red;
+    height: 3px;
+    width: 100%;
+}
+
+.hero{
+    min-height: 100vh;
+    max-height: auto;
+    background-image: url(assets/heroBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.tag{
+    background-color: wheat;
+    border-radius: 5px;
+
+}
+
+.quote{
+
+}
+
+.quoteItem{
+    background-color: rgb(213, 243, 243);
+}
+.tags{
+    text-align: left;
+}
+
+main{
+    background-image: url(assets/bgMain.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
