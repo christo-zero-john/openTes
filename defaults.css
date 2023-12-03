@@ -33,61 +33,65 @@
 
 /* widths */
 .wd-100{
-    width: 100vw;
-  }
-  
-  .wd-75{
-    width: 75vw;
-  }
-  
-  .wd-50{
-    width: 50vw;
-  }
-  
-  .wd-25{
-    width: 25vw;
-  }
-  
-  .wd-10{
-    width: 10vw;
-  }
-  
-  
-  .wd-20{
-    width:20vw;
-  }
-  
-  .wd-30{
-    width: 30vw;
-  }
-  
-  .wd-40{
-    width: 40vw;
-  }
-  
-  .wd-50{
-    width: 50vw;
-  }
-  
-  .wd-60{
-    width: 60vw;
-  }
-  
-  .wd-70{
-    width: 70vw;
-  }
-  
-  .wd-80{
-    width: 80vw;
-  }
-  
-  .wd-90{
-    width: 90vw;
-  }
-  
-  .w-fit{
-    width: fit-content !important;
-  }
+  width: 100vw;
+}
+
+.wd-75{
+  width: 75vw;
+}
+
+.wd-50{
+  width: 50vw;
+}
+
+.wd-25{
+  width: 25vw;
+}
+
+.wd-10{
+  width: 10vw;
+}
+
+
+.wd-20{
+  width:20vw;
+}
+
+.wd-30{
+  width: 30vw;
+}
+
+.wd-40{
+  width: 40vw;
+}
+
+.wd-50{
+  width: 50vw;
+}
+
+.wd-60{
+  width: 60vw;
+}
+
+.wd-70{
+  width: 70vw;
+}
+
+.wd-80{
+  width: 80vw;
+}
+
+.wd-90{
+  width: 90vw;
+}
+
+.w-fit{
+  width: fit-content !important;
+}
+
+.w-inherit{
+  width: inherit;
+}
 
 
 /* min-width */
@@ -150,62 +154,66 @@
 }
 
 
-  /* heights */
-  .hd-100{
-    height: 100vh;
-  }
-  
-  .hd-75{
-    height: 75vh;
-  }
-  
-  .hd-50{
-    height: 50vh;
-  }
-  
-  .hd-25{
-    height: 25vh;
-  }
-  
-  .hd-10{
-    height: 10vh;
-  }
-  
-  .hd-20{
-    height:20vh;
-  }
-  
-  .hd-30{
-    height: 30vh;
-  }
-  
-  .hd-40{
-    height: 40vh;
-  }
-  
-  .hd-50{
-    height: 50vh;
-  }
-  
-  .hd-60{
-    height: 60vh;
-  }
-  
-  .hd-70{
-    height: 70vh;
-  }
-  
-  .hd-80{
-    height: 80vh;
-  }
-  
-  .hd-90{
-    height: 90vh;
-  }
-  
-  .h-fit{
-    height: fit-content;
-  }
+/* heights */
+.hd-100{
+  height: 100vh;
+}
+
+.hd-75{
+  height: 75vh;
+}
+
+.hd-50{
+  height: 50vh;
+}
+
+.hd-25{
+  height: 25vh;
+}
+
+.hd-10{
+  height: 10vh;
+}
+
+.hd-20{
+  height:20vh;
+}
+
+.hd-30{
+  height: 30vh;
+}
+
+.hd-40{
+  height: 40vh;
+}
+
+.hd-50{
+  height: 50vh;
+}
+
+.hd-60{
+  height: 60vh;
+}
+
+.hd-70{
+  height: 70vh;
+}
+
+.hd-80{
+  height: 80vh;
+}
+
+.hd-90{
+  height: 90vh;
+}
+
+.h-fit{
+  height: fit-content;
+}
+
+.h-inherit{
+  height: inherit;
+}
   
 
 
