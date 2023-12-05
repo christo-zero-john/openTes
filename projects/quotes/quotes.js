@@ -24,7 +24,7 @@ function getQuote(){
             <div class="quoteItem p-3 d-flex flex-column justify-content-center align-items-centers-center">
             <hr>
                 <p class="quote display-6">${data[0].content}</p>
-                <p class="author blockquote-footer text-center pt-3" onclick="getQuoteByAuthor(${data[0].author})">${data[0].author}</p>
+                <a  class="btn border-0 text-decoration-none author blockquote-footer text-center pt-3" onclick="getQuoteByAuthor('${data[0].authorSlug}')">${data[0].author}</a>
                 <p class="">`
                 for(i=0; i<data[0].tags.length; i++){
                     quoteContent += `
@@ -100,7 +100,7 @@ function retrieveQuote(){
                     <div class="quoteItem p-3 d-flex flex-column justify-content-center align-items-center">
                     <hr>
                         <p class="quote display-6">${data.content}</p>
-                        <p class="author blockquote-footer text-center pt-3" onclick="getQuoteByAuthor(${data.author})">${data.author}</p>
+                        <a href="#" class="text-decoration-none author blockquote-footer text-center pt-3" onclick="getQuoteByAuthor('${data.authorSlug}')"Slug>${data.author}</a>
                         <p class="">`
                         for(i=0; i<data.tags.length; i++){
                             quoteContent += `
@@ -116,8 +116,35 @@ function retrieveQuote(){
     }
 }
 
-function getQuoteByAuthor(){
-
+function getQuoteByAuthor(author){
+    quoteContent="";
+    console.log(author)
+    fetch(`https://api.quotable.io/quotes?author=${author}`)
+        .then(res=>res.json())
+        .then(data=>data.results)
+        .then((data=>{ 
+            quote.innerHTML = "";
+            console.log(data)
+            for(x in data){
+                quoteContent = `
+                    <div class="quoteItem p-3 d-flex flex-column justify-content-center align-items-center">
+                    <hr>
+                        <p class="quote display-6">${data[x].content}</p>
+                        
+                        <p class="">`
+                        for(y in data[x].tags){
+                            quoteContent += `
+                            <span class="tag p-1 px-2" onclick="getQuoteByTag('${data[x].tags[y]}')">#${data[x].tags[y]}</span>
+                            `
+                            console.log("newQTag")
+                        }
+                        console.log("newQuote")
+                    quote.innerHTML += `
+                        </p>
+                    </div>`    
+                    quote.innerHTML += quoteContent;
+            }
+        }))
 }
 
 function getQuoteByTag(){
