@@ -1,0 +1,9 @@
+.hero{
+    background: url(assets/nameSpaceHeroBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: inherit;
+}
+
