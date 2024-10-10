@@ -1,0 +1,40 @@
+#heroImg{
+    background-image: linear-gradient(#0000003b,#0000003b),url(assets/img/qrCodeGenerator.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.heroCap{
+    letter-spacing: 0.1rem;
+    color: rgb(252, 197, 0);
+    text-shadow: 0 0 5px #000000b3;
+}
+
+header{
+    max-height: auto;
+}
+
+main{
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 150vh;
+}
+
+#qrCode{
+    width: fit-content;
+    border-radius: 5px;
+    width: fit-content;
+    
+}
+
+.bodyBg{
+    opacity: 0.5;
+    position: fixed;
+    background: url(assets/img/bodyBg.jpg);
+    background-size: cover;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
